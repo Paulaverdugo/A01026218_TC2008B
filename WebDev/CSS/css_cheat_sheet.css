@@ -1,0 +1,18 @@
+h1 {
+    color:rgb(123, 0, 255);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h2 {
+    color: #330fff
+}
+
+#second_h1{
+    color: #f00fe5
+}
+
+.container{
+    border: 1px black solid;
+    padding: 10px;
+    margin: 10px;
+}
