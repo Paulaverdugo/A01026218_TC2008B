@@ -1,10 +1,10 @@
 h1 {
-    color:rgb(123, 0, 255);
+    color:rgb(77, 69, 87);
     font-family: 'Courier New', Courier, monospace;
 }
 
 h2 {
-    color: #330fff
+    color: #301ba8
 }
 
 #second_h1{
@@ -15,4 +15,74 @@ h2 {
     border: 1px black solid;
     padding: 10px;
     margin: 10px;
+}
+
+.borderClass{
+    border: 10px black solid;
+    padding: 5px;
+    margin: 5px;
+}
+
+.border-left-right-top-bottomClass{
+    border-left: 5px solid black;
+    border-right: 5px solid red;
+    border-top: 5px solid green;
+    border-bottom: 5px solid blue;
+}
+
+.border-radiusClass{
+    border: 10px solid black;
+    border-radius: 10% 20% 20% 20%;
+}
+
+.background-imageClass{
+    width: 300px;
+    height: 200px;
+    margin: 10px 15px 10px 0;
+    background-size: 300px;
+    background-repeat: no-repeat;
+    background-image: url('../Images/HTML_CSS.png');
+}
+.colorClass{
+    color: #a81b1b;
+}
+
+.fontClass{
+    font: 200px;
+}
+
+.font-familyClass{
+    font-family: helvetica;
+}
+.font-style-weightClass{
+    font-style: italic;
+    font-size: large;
+}
+.width-heightClass{
+    width: 100px;
+    height: 200px
+
+}
+.list-styleClass{
+    list-style: square;
+}
+.marginClass{
+    margin: 100px;
+}
+.paddingClass{
+    padding: 20px;
+}
+.overflowClass{
+    height: 100px;
+    overflow: scroll;
+}
+.displayClass{
+    display: grid;
+
+}
+.positionClass{
+    position: relative;
+}
+.filterClass{
+    filter: blur(1px)
 }
