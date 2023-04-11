@@ -48,7 +48,7 @@ h2 {
 }
 
 .fontClass{
-    font: 200px;
+    font: italic 0.7em "Fira Sans", sans-serif;;
 }
 
 .font-familyClass{
@@ -77,7 +77,7 @@ h2 {
     overflow: scroll;
 }
 .displayClass{
-    display: grid;
+    display: inline;
 
 }
 .positionClass{
