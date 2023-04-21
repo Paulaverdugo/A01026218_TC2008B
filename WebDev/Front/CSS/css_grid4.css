@@ -1,7 +1,6 @@
 body {
-    margin: 0;
     height: 100vh;
-    background-color: gray;
+    background-color: #2d3044;
 }
 
 .container{
@@ -25,14 +24,14 @@ body {
 .orange{
     padding: 10px;
     border: 0px white solid;
-    background-color: rgb(255, 94, 0);
+    background-color: #fda061;
     min-height: 0;
 }
 
 .light_green{
     padding: 10px;
     border: 0px white solid;
-    background-color: rgb(0, 255, 183);
+    background-color: #34daba;
     min-height: 0;
 }
 
@@ -50,14 +49,14 @@ body {
 .red{
     padding: 10px;
     border: 0px white solid;
-    background-color: rgb(255, 0, 0);
+    background-color: #fc6057;
     min-height: 0;
 }
 
 .green{
     padding: 10px;
     border: 0px white solid;
-    background-color: rgb(41, 173, 46);
+    background-color: #00a688;
     min-height: 0;
 }
 
