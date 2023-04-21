@@ -9,17 +9,20 @@ body{
 
 .nav-bar{
     color: white;
-    padding: 10px;
-    border: 1px solid black;
+    padding: 20px;
     display: flex;
-    justify-content: space-between;
     background-color: #253f4b;
+    justify-content: space-between;
 }
 
 #menu{
-    display: flex;
+    
+    max-width: 300px;
     justify-content: space-around;
+    display: flex;
     align-items: center;
+    text-align: right;
+    float: left;
 }
 
 
@@ -28,17 +31,17 @@ body{
 }
 
 .orange {
-    min-height: 300px;
+    min-height: 200px;
     text-align: center;
     justify-content: center;
     padding: 40px;
     color: white;
     background-color: #b87e2d;
-    max-height: 100px;;
 }
 
 #text-portion {
     margin: 10px;
+    text-align: left;
 }
 
 .large {
@@ -60,7 +63,7 @@ body{
 
 .skills{
     padding: 30px;
-    margin: 50px
+    margin: 10px;
 }
 
 .imgs {
@@ -69,11 +72,11 @@ body{
 }
 
 .undertext {
-    margin: 40px;
+    margin: 10px;
     display: flex;
     justify-content: space-around;
 }
 
 img {
-    width: 200px;
+    width: 120px;
 }
