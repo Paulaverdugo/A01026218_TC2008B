@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background-color: gray;
+}
+
+.container{
+    margin: 10px;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, fr);
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "header header header";
+    grid-auto-rows: minmax(150px, 1fr);
+    gap: 10px;
+}
+
+.grid-item{
+    padding: 10px;
+    border: 0px white solid;
+    background-color: rgb(168, 208, 208);
+    min-height: 0;
+
+}
+
+.red{
+    padding: 10px;
+    border: 0px white solid;
+    background-color: rgb(255, 0, 0);
+    min-height: 0;
+}
+
+.orange{
+    padding: 10px;
+    border: 0px white solid;
+    background-color: rgb(255, 94, 0);
+    min-height: 0;
+}
+
+.light_orange{
+    padding: 10px;
+    border: 0px white solid;
+    background-color: rgb(214, 141, 99);
+    min-height: 0;
+}
+
+.deep_green{
+    padding: 10px;
+    border: 0px white solid;
+    background-color: rgb(10, 96, 13);
+    min-height: 0;
+}
+
+.green{
+    padding: 10px;
+    border: 0px white solid;
+    background-color: rgb(41, 173, 46);
+    min-height: 0;
+}
+
+.light_green{
+    padding: 10px;
+    border: 0px white solid;
+    background-color: rgb(124, 181, 126);
+    min-height: 0;
+}
