@@ -1,46 +1,29 @@
 document.addEventListener("mousemove", function(event) {
-    var xPos = event.pageX;
-    var yPos = event.pageY;
-    var mousePositionElement = document.getElementById("mousePosition");
-    mousePositionElement.textContent = "Posición del mouse: " + xPos + ", " + yPos;
+  let xPos = event.pageX;
+  let yPos = event.pageY;
+  let mousePositionElement = document.getElementById("mousePosition");
+  mousePositionElement.textContent = "Posición del mouse: " + xPos + ", " + yPos;
 });
 
-// Se obtiene el elemento del formulario con el id "form1"
-var form = document.getElementById("form1");
-
-// Se agrega un event listener al formulario que se activa cuando se envía el formulario
+let form = document.getElementById("form1");
 form.addEventListener("submit", function(event) {
-
-  // Se utiliza el método preventDefault() para evitar que se recargue la página al enviar el formulario
-  event.preventDefault();
-
-  // Se obtiene el valor de la caja de texto con el id "form-fname" y se asigna a la variable firstName
-  var firstName = document.getElementById("form-fname").value;
-
-  // Se obtiene el valor de la caja de texto con el id "form-lname" y se asigna a la variable lastName
-  var lastName = document.getElementById("form-lname").value;
-
-  // Se concatena el valor de la variable firstName con un espacio y el valor de la variable lastName y se asigna a la variable fullName
-  var fullName = firstName + " " + lastName;
-
-  // Se crea un nuevo elemento <p> y se asigna a la variable fullNameElement
-  var fullNameElement = document.createElement("p");
-
-  // Se asigna el texto "Nombre completo: " y el valor de la variable fullName al contenido del elemento fullNameElement
-  fullNameElement.textContent = "Nombre completo: " + fullName;
-
-  // Se agrega el elemento creado después del botón de enviar utilizando el método appendChild()
-  form.appendChild(fullNameElement);
+event.preventDefault();x
+let firstName = document.getElementById("form-fname").value;
+let lastName = document.getElementById("form-lname").value;
+let fullName = firstName + " " + lastName;
+let fullNameElement = document.createElement("p");
+fullNameElement.textContent = "Nombre completo: " + fullName;
+form.appendChild(fullNameElement);
 });
 
 const btnInsertRow = document.getElementById('btn-insert-r');
 btnInsertRow.addEventListener('click', function() {
   const table = document.getElementById('sampleTable');
   const newRow = table.insertRow();
-  const newCell1 = newRow.insertCell();
-  const newCell2 = newRow.insertCell();
-  newCell1.innerHTML = 'Row ' + (table.rows.length) + ' column 1';
-  newCell2.innerHTML = 'Row ' + (table.rows.length) + ' column 2';
+  for (let i = 0; i < table.rows[0].cells.length; i++) {
+    const newCell = newRow.insertCell();
+    newCell.innerHTML = 'Row ' + (table.rows.length) + ' column ' + (i + 1);
+  }
 });
 
 const btnInsertCol = document.getElementById('btn-insert-c');
@@ -51,7 +34,6 @@ btnInsertCol.addEventListener('click', function() {
     cell.innerHTML = 'Row ' + (i + 1) + ' column ' + (table.rows[i].cells.length);
   }
 });
-
 
 const btnChange = document.getElementById('btn-change');
 btnChange.addEventListener('click', function() {
@@ -89,17 +71,17 @@ btnRmvColor.addEventListener('click', function() {
   colorSelect.remove(colorSelect.selectedIndex);
 });
 
-var imagen = document.getElementById("imagenGato");
+let imagen = document.getElementById("imagenGato");
 
 imagen.addEventListener("mouseenter", function() {
-  var newWidth = Math.floor(Math.random() * 301) + 300; // generate random width between 300 and 600
-  var newHeight = Math.floor(Math.random() * 301) + 300; // generate random height between 300 and 600
+  let newWidth = Math.floor(Math.random() * 301) + 300; // generate random width between 300 and 600
+  let newHeight = Math.floor(Math.random() * 301) + 300; // generate random height between 300 and 600
   
-  var newImage = new Image(); // create new Image object
+  let newImage = new Image(); // create new Image object
   newImage.src = "http://placekitten.com/" + newWidth + "/" + newHeight; // set the source of the new image to a random size
   newImage.alt = "Random cat image"; // set alternative text for the new image
   newImage.id = "imagenGato"; // set the id for the new image
 
   // replace the existing image with the new one
-  var oldImage = document.getElementById("imagenGato");
+  let oldImage = document.getElementById("imagenGato");
   oldImage.parentNode.replaceChild(newImage, oldImage);});
