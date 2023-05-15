@@ -68,8 +68,9 @@ const btnAddColor = document.getElementById('btn-add-color');
 btnAddColor.addEventListener('click', function() {
   const colorSelect = document.getElementById('colorSelect');
   const newColor = document.createElement('option');
-  newColor.style.backgroundColor = getRandomColor();
-  newColor.text = ('Random color:', color);
+  const color = getRandomColor();
+  newColor.text = color;
+  newColor.style.backgroundColor = color;
   colorSelect.add(newColor);
 });
 
@@ -87,3 +88,18 @@ btnRmvColor.addEventListener('click', function() {
   const colorSelect = document.getElementById('colorSelect');
   colorSelect.remove(colorSelect.selectedIndex);
 });
+
+var imagen = document.getElementById("imagenGato");
+
+imagen.addEventListener("mouseenter", function() {
+  var newWidth = Math.floor(Math.random() * 301) + 300; // generate random width between 300 and 600
+  var newHeight = Math.floor(Math.random() * 301) + 300; // generate random height between 300 and 600
+  
+  var newImage = new Image(); // create new Image object
+  newImage.src = "http://placekitten.com/" + newWidth + "/" + newHeight; // set the source of the new image to a random size
+  newImage.alt = "Random cat image"; // set alternative text for the new image
+  newImage.id = "imagenGato"; // set the id for the new image
+
+  // replace the existing image with the new one
+  var oldImage = document.getElementById("imagenGato");
+  oldImage.parentNode.replaceChild(newImage, oldImage);});
