@@ -7,13 +7,13 @@ document.addEventListener("mousemove", function(event) {
 
 let form = document.getElementById("form1");
 form.addEventListener("submit", function(event) {
-event.preventDefault();x
-let firstName = document.getElementById("form-fname").value;
-let lastName = document.getElementById("form-lname").value;
-let fullName = firstName + " " + lastName;
-let fullNameElement = document.createElement("p");
-fullNameElement.textContent = "Nombre completo: " + fullName;
-form.appendChild(fullNameElement);
+  event.preventDefault();
+  let firstName = document.getElementById("form-fname").value;
+  let lastName = document.getElementById("form-lname").value;
+  let fullName = firstName + " " + lastName;
+  let fullNameElement = document.createElement("p");
+  fullNameElement.textContent = "Nombre completo: " + fullName;
+  form.appendChild(fullNameElement);
 });
 
 const btnInsertRow = document.getElementById('btn-insert-r');
